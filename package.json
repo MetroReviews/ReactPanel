@@ -1,0 +1,36 @@
+{
+  "name": "reactpanel",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.9",
+    "@chakra-ui/react": "^2.3.2",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "apexcharts": "^3.35.5",
+    "framer-motion": "^7.3.5",
+    "next": "12.3.0",
+    "react": "18.2.0",
+    "react-apexcharts": "^1.4.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.4.0",
+    "react-twitter-embed": "^4.0.4",
+    "react-twitter-widgets": "^1.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@types/node": "18.7.18",
+    "@types/react": "18.0.18",
+    "babel-loader": "^8.2.5",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.3.0",
+    "typescript": "4.8.3"
+  }
+}
