@@ -51,8 +51,9 @@ export const ContentMenu = () => {
             alt="Metro Reviews"
             width="35px"
             height="35px"
+            marginRight="5px"
           />
-
+          <Heading size="md">Staff Panel</Heading>
           <Spacer />
           <Avatar name="Dillon Veit" size="sm" />
         </Flex>
@@ -66,9 +67,6 @@ export const ContentMenu = () => {
           justifyItems="left"
         >
           <Breadcrumb spacing="8px">
-            <BreadcrumbItem>
-              <Text color="#c691ff">Staff Panel</Text>
-            </BreadcrumbItem>
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Dashboard</BreadcrumbLink>
             </BreadcrumbItem>
