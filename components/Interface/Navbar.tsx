@@ -58,7 +58,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/bots"
                   className="text-gray-900 dark:text-white hover:underline"
                 >
                   Bots
@@ -66,7 +66,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/lists"
                   className="text-gray-900 dark:text-white hover:underline"
                 >
                   Lists
