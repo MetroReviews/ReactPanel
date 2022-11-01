@@ -36,11 +36,30 @@ import {
         <br />
         <br />
         <div className="p-3">
-          <div className="flex flex-row justify-between content-baseline">
+          <br />
+          <div className="flex flex-row justify-center content-start gap-4">
+            <div className="flex flex-col gap-4">
             <h3 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white uppercase">
               {bot?.username}
             </h3>
-            <Card className="w-[50%]">
+              <div className="p-6 w-[60rem] h-fit bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Description
+                </h5>
+                <hr />
+                <br />
+                <center>
+                <p
+                  className="format dark:format-invert w-full"
+                  dangerouslySetInnerHTML={{
+                    __html: mdDescription,
+                  }}>
+              </p>
+                </center>
+            </div>
+            </div>
+              <div className="flex flex-col gap-2">
+              <Card className="w-[100%]">
               {bot?.state === 0 && ( // AWAITING DISPATCH
                 <div className="flex flex-row">
                   <Spinner color="warning" aria-label="Purple spinner example" />
@@ -85,27 +104,6 @@ import {
                 </span>
               )}
             </Card>
-          </div>
-          <br />
-          <div className="flex flex-row justify-between content-start gap-4">
-            <div className="flex flex-col gap-4">
-              <div className="p-6 w-[60rem] h-fit bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Description
-                </h5>
-                <hr />
-                <br />
-                <center>
-                <p
-                  className="format dark:format-invert w-full"
-                  dangerouslySetInnerHTML={{
-                    __html: mdDescription,
-                  }}>
-              </p>
-                </center>
-            </div>
-            </div>
-              <div className="flex flex-col gap-2">
                 <Table>
                   <Table.Head>
                     <Table.HeadCell>TYPE</Table.HeadCell>
