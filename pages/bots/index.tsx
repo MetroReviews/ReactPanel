@@ -1,4 +1,4 @@
-import { Tabs, Badge, Button } from "flowbite-react";
+import { Tabs, Badge, Button, Card } from "flowbite-react";
 import { Timeline } from "react-twitter-widgets";
 import React, { useEffect, useState } from "react";
 // components
@@ -23,10 +23,10 @@ const Home = () => {
           </h2>
         </div>
         <br />
-        <div className="flex flex-row flex-wrap">
+        <div className="flex flex-row flex-wrap gap-4">
               {bots
                 ?.map((bot, index) => (
-                  <GridCard key={index}>
+                  <Card key={index} className="w-[20rem]">
                     <h5 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
                       {bot?.username}
                     </h5>
@@ -50,9 +50,6 @@ const Home = () => {
                        Denied
                       </Badge>
                     )}
-                    <div className="h-[10rem]">
-                      <span className="break-normal">{bot?.description}</span>
-                    </div>
                     <br />
                     <div className="flex">
                       <Button href={"/bots/view/"+bot?.bot_id}>
@@ -71,7 +68,7 @@ const Home = () => {
                         </svg>
                       </Button>
                     </div>
-                  </GridCard>
+                  </Card>
                 ))}
             </div>
       </div>
